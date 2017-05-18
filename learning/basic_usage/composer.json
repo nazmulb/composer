@@ -1,6 +1,13 @@
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nazmulb/composer/tree/master/phpmac"
+        }
+    ],
     "minimum-stability": "stable",
     "require": {
-        "monolog/monolog": "1.22.*"
+        "monolog/monolog": "1.22.*",
+        "nazmulb/mac-address-php": "dev-master"
     }
 }
