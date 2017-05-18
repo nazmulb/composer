@@ -12,13 +12,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nazmulb/phpmaclib.git",
-                "reference": "b874b4b2c5207057c2b136a7dd871ce731d03c74"
+                "reference": "7f58b31792a79b90489e3108de3c8e789127a561"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nazmulb/phpmaclib/zipball/b874b4b2c5207057c2b136a7dd871ce731d03c74",
-                "reference": "b874b4b2c5207057c2b136a7dd871ce731d03c74",
+                "url": "https://api.github.com/repos/nazmulb/phpmaclib/zipball/7f58b31792a79b90489e3108de3c8e789127a561",
+                "reference": "7f58b31792a79b90489e3108de3c8e789127a561",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
             },
             "type": "library",
             "autoload": {
@@ -26,18 +29,31 @@
                     "NazmulB\\MacAddressPhpLib\\": "src"
                 }
             },
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Nazmul Basher",
-                    "email": "nazmul.basher@gmail.com"
+                    "email": "nazmul.basher@gmail.com",
+                    "homepage": "https://nazmulb.wordpress.com",
+                    "role": "Developer"
                 }
             ],
             "description": "Getting MAC Address using PHP",
+            "homepage": "https://github.com/nazmulb/phpmaclib",
+            "keywords": [
+                "Mac",
+                "Mac Address",
+                "Mac Address in PHP",
+                "Mac Address using PHP",
+                "PHP"
+            ],
             "support": {
                 "source": "https://github.com/nazmulb/phpmaclib/tree/master",
                 "issues": "https://github.com/nazmulb/phpmaclib/issues"
             },
-            "time": "2017-05-18 12:04:00"
+            "time": "2017-05-18 14:03:22"
         }
     ],
     "packages-dev": [
