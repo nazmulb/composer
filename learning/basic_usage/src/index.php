@@ -4,6 +4,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\FirePHPHandler;
+use \NazmulB\MacAddressPhpLib\MacAddress;
 
 // Create the logger
 $logger = new Logger('fnlogger');
@@ -13,3 +14,6 @@ $logger->pushHandler(new FirePHPHandler());
 
 // You can now use your logger
 $logger->addInfo('My logger is now ready for action!');
+
+
+echo MacAddress::getMacAddress();

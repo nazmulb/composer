@@ -2,12 +2,14 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/nazmulb/composer/tree/master/phpmac"
+            "url": "https://github.com/nazmulb/phpmaclib"
         }
     ],
     "minimum-stability": "stable",
     "require": {
-        "monolog/monolog": "1.22.*",
         "nazmulb/mac-address-php": "dev-master"
+    },
+    "require-dev": {
+        "monolog/monolog": "1.0.*"
     }
 }
