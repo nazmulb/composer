@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nazmulb/phpmaclib.git",
-                "reference": "7f58b31792a79b90489e3108de3c8e789127a561"
+                "reference": "6572fc9697516a343754dd7fdedc98a46ba7fbb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nazmulb/phpmaclib/zipball/7f58b31792a79b90489e3108de3c8e789127a561",
-                "reference": "7f58b31792a79b90489e3108de3c8e789127a561",
+                "url": "https://api.github.com/repos/nazmulb/phpmaclib/zipball/6572fc9697516a343754dd7fdedc98a46ba7fbb4",
+                "reference": "6572fc9697516a343754dd7fdedc98a46ba7fbb4",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +50,7 @@
                 "Mac Address using PHP",
                 "php"
             ],
-            "time": "2017-05-18 14:03:22"
+            "time": "2017-05-22 10:14:41"
         },
         {
             "name": "nazmulb/memory-cpu-php",
