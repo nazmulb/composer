@@ -5,6 +5,7 @@ use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\FirePHPHandler;
 use \NazmulB\MacAddressPhpLib\MacAddress;
+use \NazmulB\MemoryCpuPhpLib\MemoryCpuUsage;
 
 // Create the logger
 $logger = new Logger('fnlogger');
@@ -16,4 +17,6 @@ $logger->pushHandler(new FirePHPHandler());
 $logger->addInfo('My logger is now ready for action!');
 
 
-echo MacAddress::getMacAddress();
+echo 'Server MAC Address: ' . MacAddress::getMacAddress().'<br />';
+echo 'Server Memory Usage: ' . MemoryCpuUsage::getServerMemoryUsage().'<br />';
+echo 'Server CPU Usage: ' . MemoryCpuUsage::getServerCpuUsage();

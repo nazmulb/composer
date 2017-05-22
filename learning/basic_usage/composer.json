@@ -1,13 +1,14 @@
 {
+    "minimum-stability": "stable",
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/nazmulb/phpmaclib"
+            "url": "https://github.com/nazmulb/memory_cpu_usage_php"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
-        "nazmulb/mac-address-php": "dev-master"
+        "nazmulb/mac-address-php": "dev-master",
+        "nazmulb/memory-cpu-php": "dev-master"
     },
     "require-dev": {
         "monolog/monolog": "1.0.*"
