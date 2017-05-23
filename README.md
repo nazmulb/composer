@@ -18,7 +18,7 @@
 mv composer.phar /usr/local/bin/composer
 ```
 
-## Basic usage
+## Basic Usage
 Suppose, we need `monolog/monolog` as a logging library in our prject.
 
 - To start using Composer in your project, all you need is a `composer.json` file. This file describes the dependencies of your project and may contain other metadata as well.
@@ -41,7 +41,7 @@ php composer.phar install
 ```
 - When Composer has finished installing, it writes all of the packages and the exact versions of them that it downloaded to the `composer.lock` file, locking the project to those specific versions. You should commit the `composer.lock` file to your project repo so that all people working on the project are locked to the same versions of dependencies.
 
-### Example 1:
+### Example:
 I have used 3 libraries in this `basic_usage` learning example project. You can find it here under `learning` folder. 
 
 - I have added `nazmulb/mac-address-php` and `nazmulb/memory-cpu-php` under `require`. `nazmulb/mac-address-php` will install from <a href="https://packagist.org/packages/nazmulb/mac-address-php">Packagist</a> and `nazmulb/memory-cpu-php` will install from my <a href="https://github.com/nazmulb/memory_cpu_usage_php">repository</a>.
@@ -77,5 +77,5 @@ php composer.phar require --dev monolog/monolog: 1.0.*
 php composer.phar init
 ```
 
-## How to make you own libraries?
+## How to make your own libraries?
 Please read <a href="https://getcomposer.org/doc/02-libraries.md">this page</a> to make you own libraries. Thanks!
