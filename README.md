@@ -37,7 +37,7 @@ Suppose, we need `monolog/monolog` as a logging library in our prject.
 - To install the defined dependencies for your project, just run the install command.
 
 ```js
-php composer.phar install
+composer install
 ```
 - When Composer has finished installing, it writes all of the packages and the exact versions of them that it downloaded to the `composer.lock` file, locking the project to those specific versions. You should commit the `composer.lock` file to your project repo so that all people working on the project are locked to the same versions of dependencies.
 
@@ -69,12 +69,69 @@ I have used 3 libraries in this `basic_usage` learning example project. You can 
 - To add libraries only under `require-dev`, you can run the following command:
 
 ```js
-php composer.phar require --dev monolog/monolog: 1.0.*
+composer require --dev monolog/monolog: 1.0.*
 ```
 - We can also using `init` command to create a `composer.json` from CLI.
 
 ```js
-php composer.phar init
+composer init
+```
+
+## How to install libraries globally?
+
+First you should see where is your global vendor binaries directory:
+
+```js
+composer global config bin-dir --absolute
+```
+
+You can query Composer to find where it has set the user $COMPOSER_HOME directory.
+
+```js
+composer config --list --global
+```
+
+For example we need to install `jenssegers/date` globally
+
+```js
+composer global require jenssegers/date:3.2.*
+```
+
+This will install `jenssegers/date` and all its dependencies into the `~/.composer/vendor/` directory and, most importantly, the `jenssegers/date` CLI tools are installed into `~/.composer/vendor/bin/`.
+
+Simply add this directory to your PATH in your `~/.bash_profile` (or `~/.bashrc`) like this:
+
+```js
+export PATH=~/.composer/vendor/bin:$PATH
+```
+
+and `jenssegers/date` is now available on your command line.
+
+You can see all the globally installed libraries:
+
+```js
+composer global show
+```
+
+You can use this directly like this:
+
+```php
+<?php
+require '/Users/nazmulbasher/.composer/vendor/autoload.php';
+
+use Jenssegers\Date\Date;
+
+Date::setLocale('bd');
+
+echo Date::now()->format('l j F Y H:i:s'); // zondag 28 april 2013 21:58:16
+
+echo Date::parse('-1 day')->diffForHumans(); // 1 dag geleden
+```
+
+To keep your libraries up to date, you simply do this:
+
+```js
+composer global update
 ```
 
 ## How to make your own libraries?
