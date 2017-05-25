@@ -5,7 +5,7 @@
 - It enables you to declare the libraries you depend on.
 - It finds out which versions of which packages can and need to be installed, and installs them (meaning it downloads them into your project).
 
-## How to Installation?
+## How to Install?
 ### Install Locally
 - Installing Composer locally is a matter of just running the installer in your project directory. See <a href="https://getcomposer.org/download/">the Download page</a> for instructions.
 - Now just run `php composer.phar` in order to run Composer.
